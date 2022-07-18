@@ -19,7 +19,8 @@ void print(char * filename) {
 
   char * buff;
 
-  fgets(buff, 100, fp);
+  fscanf(fp, "%s", buff);
+
   printf("%s\n", buff);
 
   fclose(fp);
